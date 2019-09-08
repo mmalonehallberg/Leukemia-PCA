@@ -1,4 +1,4 @@
-setwd("~/R Scripts")
+setwd("~/R Scripts/PCA HW")
 load("LeukError.RData")
 
 pca <- prcomp(leuk[, 1:5000], 3)
@@ -33,3 +33,5 @@ plot3d(x = pca$x[,1],
        xlab = "Principal Component 1", 
        ylab = "Principal Component 2", 
        zlab = "Principal Component 3")
+
+leuk[c(6, 38, 19), 5001]
